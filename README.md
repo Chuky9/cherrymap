@@ -4,6 +4,10 @@ Import Nmap scans logs to Cherrytree
 Useful script to assist you during infrastructure assessments, importing to Cherrytree (https://www.giuspen.com/cherrytree/) results of Nmap scans.
 
 ```
+installation:
+
+pip3 install -r requirements.txt
+
 usage: cherrymap.py [-h] [-ah] [-ap] [-a] folder
 
 positional arguments:

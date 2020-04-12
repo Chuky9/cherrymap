@@ -32,7 +32,7 @@ for filename in os.listdir(path):
 		with open(path+filename.split(".")[0]+".nmap") as f: s = f.read()
 		ET.SubElement(node, "rich_text").text=s
 	except EnvironmentError:
-		print "Nmap file not found it won't be added"
+		print ("Nmap file not found it won't be added")
 
 	for _host in rep.hosts:
 		if (_host.is_up() and len(_host.services)>0) or args.allhosts or args.all:
